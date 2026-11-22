@@ -1,0 +1,1233 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>小蓝gtv官网入口 - 官方视频品牌门户与内容生态</title>
+<meta name="description" content="小蓝gtv官网入口是面向创作者与企业的高品质视频品牌官方网站，汇集原创精品内容、创作者社区与企业动态，提供高清、专业、值得信赖的视频内容生态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1f3a'/%3E%3Cpath d='M24 18l22 14-22 14z' fill='%235ad1e6'/%3E%3C/svg%3E">
+<style>
+:root{
+  --xlg-ink:#0b1f3a;
+  --xlg-ink-2:#122a4d;
+  --xlg-cyan:#5ad1e6;
+  --xlg-blue:#2f6df6;
+  --xlg-soft:#eef4fb;
+  --xlg-line:#dbe5f0;
+  --xlg-text:#1c2b3f;
+  --xlg-muted:#5b6c81;
+  --xlg-white:#ffffff;
+  --xlg-bg:#f6f9fd;
+  --xlg-radius:16px;
+  --xlg-shadow:0 10px 30px rgba(11,31,58,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  color:var(--xlg-text);
+  background:var(--xlg-bg);
+  line-height:1.7;
+  font-size:16px;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{margin:0 0 .6em;line-height:1.3}
+p{margin:0 0 1em}
+.xlg-wrap{width:min(1180px,92%);margin:0 auto}
+.xlg-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- 顶部：公告条 + 页头吸顶 ---------- */
+.xlg-topbar{
+  background:var(--xlg-ink);
+  color:#dfe9f7;
+  font-size:13.5px;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.xlg-topbar .xlg-wrap{
+  display:flex;align-items:center;gap:12px;
+  padding:7px 0;flex-wrap:wrap;
+}
+.xlg-topbar-tag{
+  background:var(--xlg-cyan);color:var(--xlg-ink);
+  font-weight:700;border-radius:999px;padding:1px 10px;font-size:12px;flex:0 0 auto;
+}
+.xlg-topbar-list{display:flex;gap:18px;flex-wrap:wrap;overflow:hidden}
+.xlg-topbar-list span{white-space:nowrap;opacity:.95}
+.xlg-topbar-list b{color:#8fe7f4;font-weight:600}
+
+.xlg-header{
+  position:sticky;top:0;z-index:60;
+  background:rgba(11,31,58,.97);
+  backdrop-filter:blur(8px);
+  color:#eaf2fd;
+  box-shadow:0 6px 24px rgba(11,31,58,.18);
+}
+.xlg-topbar{position:sticky;top:0;z-index:61}
+.xlg-head-inner{
+  display:flex;align-items:center;gap:20px;padding:12px 0;
+}
+.xlg-brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.4px;font-size:19px;color:#fff;flex:0 0 auto}
+.xlg-brand-mark{
+  width:34px;height:34px;border-radius:10px;
+  background:linear-gradient(140deg,var(--xlg-cyan),var(--xlg-blue));
+  display:grid;place-items:center;color:var(--xlg-ink);font-weight:900;font-size:15px;
+}
+.xlg-brand small{display:block;font-size:10.5px;font-weight:500;color:#9db4d1;letter-spacing:2px}
+.xlg-nav{display:flex;gap:4px;margin-left:6px;flex-wrap:wrap}
+.xlg-nav a{
+  padding:7px 12px;border-radius:9px;font-size:14.5px;color:#c7d7ec;
+  transition:background .2s,color .2s;
+}
+.xlg-nav a:hover,.xlg-nav a:focus-visible{background:rgba(90,209,230,.16);color:#fff;outline:none}
+.xlg-head-tools{margin-left:auto;display:flex;align-items:center;gap:10px}
+.xlg-search{
+  display:flex;align-items:center;background:rgba(255,255,255,.1);
+  border:1px solid rgba(255,255,255,.16);border-radius:10px;padding:2px 4px 2px 10px;
+}
+.xlg-search input{
+  background:transparent;border:0;color:#fff;font-size:13.5px;width:150px;padding:6px 4px;
+  font-family:inherit;
+}
+.xlg-search input::placeholder{color:#95abc7}
+.xlg-search input:focus{outline:none}
+.xlg-search button{
+  border:0;background:var(--xlg-cyan);color:var(--xlg-ink);font-weight:700;
+  border-radius:7px;padding:5px 10px;font-size:13px;cursor:pointer;font-family:inherit;
+}
+.xlg-search-msg{
+  position:absolute;top:calc(100% + 6px);left:0;right:0;
+  background:#fff;color:var(--xlg-text);border-radius:10px;padding:8px 12px;
+  font-size:12.5px;box-shadow:var(--xlg-shadow);display:none;
+}
+.xlg-search-wrap{position:relative}
+.xlg-search-wrap.is-active .xlg-search-msg{display:block}
+.xlg-burger{
+  display:none;background:transparent;border:1px solid rgba(255,255,255,.25);
+  color:#fff;border-radius:9px;width:40px;height:38px;font-size:18px;cursor:pointer;
+}
+.xlg-cta{
+  background:var(--xlg-cyan);color:var(--xlg-ink);font-weight:700;border-radius:10px;
+  padding:8px 16px;font-size:14px;border:0;cursor:pointer;font-family:inherit;white-space:nowrap;
+}
+
+/* 锚点偏移 */
+.xlg-anchor{scroll-margin-top:120px;}
+
+/* ---------- 首屏 ---------- */
+.xlg-hero{background:linear-gradient(180deg,#0b1f3a 0%,#0f2a4d 58%,#123a63 100%);color:#eef5fd;padding:56px 0 64px}
+.xlg-hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:44px;align-items:center}
+.xlg-kicker{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:2px;
+  color:#8fe7f4;border:1px solid rgba(90,209,230,.4);border-radius:999px;padding:4px 12px;margin-bottom:18px;
+}
+.xlg-hero h1{font-size:clamp(30px,4.4vw,50px);letter-spacing:.5px;margin-bottom:16px;color:#fff}
+.xlg-hero h1 em{font-style:normal;color:var(--xlg-cyan)}
+.xlg-hero-lead{font-size:16.5px;color:#c6d7ec;max-width:34em}
+.xlg-hero-desc{font-size:14.5px;color:#a8bed9;max-width:35em}
+.xlg-hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.xlg-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:6px;
+  border-radius:11px;padding:11px 20px;font-size:14.5px;font-weight:600;cursor:pointer;
+  border:1px solid transparent;font-family:inherit;transition:transform .18s,box-shadow .18s,background .18s;
+}
+.xlg-btn:hover{transform:translateY(-2px)}
+.xlg-btn-primary{background:var(--xlg-cyan);color:var(--xlg-ink);box-shadow:0 8px 22px rgba(90,209,230,.28)}
+.xlg-btn-ghost{background:transparent;color:#dbe9fa;border-color:rgba(255,255,255,.3)}
+.xlg-btn-ghost:hover{background:rgba(255,255,255,.08)}
+.xlg-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:30px}
+.xlg-stat{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:14px 16px}
+.xlg-stat b{display:block;font-size:24px;color:#fff;letter-spacing:.5px}
+.xlg-stat span{font-size:12.5px;color:#a8bed9}
+.xlg-hero-visual{position:relative}
+.xlg-hero-visual img{border-radius:20px;box-shadow:0 26px 60px rgba(0,0,0,.4)}
+.xlg-hero-badge{
+  position:absolute;bottom:-18px;left:-14px;background:#fff;color:var(--xlg-ink);
+  border-radius:14px;padding:10px 16px;font-size:13px;font-weight:700;box-shadow:var(--xlg-shadow);
+  display:flex;align-items:center;gap:8px;
+}
+.xlg-hero-badge i{width:9px;height:9px;border-radius:50%;background:#2fbf71;display:inline-block}
+
+/* ---------- 通用区块 ---------- */
+.xlg-section{padding:60px 0}
+.xlg-section-alt{background:#fff}
+.xlg-sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:30px;flex-wrap:wrap}
+.xlg-sec-head h2{font-size:clamp(23px,2.8vw,31px);color:var(--xlg-ink);margin:0}
+.xlg-sec-head p{margin:6px 0 0;color:var(--xlg-muted);font-size:14.5px;max-width:44em}
+.xlg-sec-tag{font-size:12px;letter-spacing:2px;color:var(--xlg-blue);font-weight:700;margin-bottom:6px}
+
+/* 焦点内容（一幅重点大图 + 文字列表） */
+.xlg-focus-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:26px}
+.xlg-card{background:#fff;border:1px solid var(--xlg-line);border-radius:var(--xlg-radius);overflow:hidden;box-shadow:0 4px 14px rgba(11,31,58,.05)}
+.xlg-feature{display:flex;flex-direction:column}
+.xlg-feature .xlg-thumb{position:relative}
+.xlg-feature .xlg-thumb img{aspect-ratio:16/9;object-fit:cover;width:100%}
+.xlg-play{
+  position:absolute;inset:0;display:grid;place-items:center;
+  background:linear-gradient(180deg,rgba(11,31,58,0) 40%,rgba(11,31,58,.55));
+  opacity:0;transition:opacity .2s;
+}
+.xlg-feature:hover .xlg-play{opacity:1}
+.xlg-play span{
+  width:54px;height:54px;border-radius:50%;background:rgba(255,255,255,.92);
+  display:grid;place-items:center;color:var(--xlg-ink);font-size:20px;padding-left:3px;
+}
+.xlg-feature-body{padding:20px 22px 22px}
+.xlg-feature-body h3{font-size:20px;color:var(--xlg-ink)}
+.xlg-meta{display:flex;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--xlg-muted);margin-bottom:10px}
+.xlg-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.xlg-tag{font-size:12px;background:var(--xlg-soft);color:#275a9c;border-radius:999px;padding:2px 10px}
+.xlg-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.xlg-icon-btn{
+  border:1px solid var(--xlg-line);background:#fff;border-radius:9px;padding:6px 12px;
+  font-size:13px;color:var(--xlg-muted);cursor:pointer;font-family:inherit;display:inline-flex;gap:6px;align-items:center;
+  transition:color .18s,border-color .18s,background .18s;
+}
+.xlg-icon-btn:hover{border-color:var(--xlg-cyan);color:var(--xlg-ink)}
+.xlg-icon-btn.is-liked{color:#e0563f;border-color:#f4c3b8;background:#fff6f3}
+.xlg-icon-btn.is-saved{color:#2f6df6;border-color:#bcd0f8;background:#f3f8ff}
+
+/* 文字推荐列表 */
+.xlg-list{display:flex;flex-direction:column;gap:14px}
+.xlg-list-item{
+  background:#fff;border:1px solid var(--xlg-line);border-radius:14px;padding:16px 18px;
+  transition:border-color .2s,transform .2s,box-shadow .2s;
+}
+.xlg-list-item:hover{border-color:#b9d6ec;transform:translateY(-2px);box-shadow:var(--xlg-shadow)}
+.xlg-list-item h4{font-size:16px;color:var(--xlg-ink);margin-bottom:6px}
+.xlg-list-item p{font-size:13.5px;color:var(--xlg-muted);margin:0 0 8px}
+.xlg-num{display:inline-block;min-width:26px;color:var(--xlg-cyan);font-weight:800;font-size:14px}
+
+/* 视频三列卡片 */
+.xlg-video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.xlg-video-card{display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.xlg-video-card:hover{transform:translateY(-3px);box-shadow:var(--xlg-shadow)}
+.xlg-video-card img{aspect-ratio:16/9;object-fit:cover;width:100%}
+.xlg-video-body{padding:14px 16px 18px;display:flex;flex-direction:column;flex:1}
+.xlg-video-body h3{font-size:16px;color:var(--xlg-ink);margin-bottom:6px}
+.xlg-video-body p{font-size:13px;color:var(--xlg-muted);margin:0 0 10px;flex:1}
+.xlg-avatar-row{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--xlg-muted)}
+.xlg-avatar{
+  width:28px;height:28px;border-radius:50%;display:grid;place-items:center;
+  font-size:12px;font-weight:700;color:#fff;flex:0 0 auto;
+}
+
+/* 专题 */
+.xlg-topic-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.xlg-topic{border-radius:var(--xlg-radius);overflow:hidden;border:1px solid var(--xlg-line);background:#fff}
+.xlg-topic img{aspect-ratio:21/9;object-fit:cover;width:100%}
+.xlg-topic-body{padding:18px 20px 22px}
+.xlg-topic-body h3{font-size:18px;color:var(--xlg-ink);display:flex;justify-content:space-between;align-items:center;gap:10px}
+.xlg-status{font-size:11.5px;font-weight:600;border-radius:999px;padding:2px 10px;flex:0 0 auto}
+.xlg-status-on{background:#e6f7ee;color:#1f8a54}
+.xlg-status-soon{background:#fff4e2;color:#a86a10}
+.xlg-topic ol{margin:12px 0 0;padding-left:20px;font-size:13.5px;color:var(--xlg-muted)}
+.xlg-topic ol li{margin-bottom:5px}
+
+/* 作者矩阵（双列简介） */
+.xlg-author-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.xlg-author{
+  display:flex;gap:16px;background:#fff;border:1px solid var(--xlg-line);
+  border-radius:var(--xlg-radius);padding:18px;transition:box-shadow .2s,transform .2s;
+}
+.xlg-author:hover{box-shadow:var(--xlg-shadow);transform:translateY(-2px)}
+.xlg-author .xlg-avatar{width:56px;height:56px;font-size:20px;border-radius:16px}
+.xlg-author h3{font-size:16px;color:var(--xlg-ink);margin-bottom:2px}
+.xlg-author .xlg-role{font-size:12.5px;color:var(--xlg-blue);font-weight:600;margin-bottom:6px}
+.xlg-author p{font-size:13px;color:var(--xlg-muted);margin:0 0 8px}
+.xlg-author-data{font-size:12.5px;color:var(--xlg-muted);display:flex;gap:14px;flex-wrap:wrap;margin-top:8px}
+.xlg-author-data b{color:var(--xlg-ink)}
+
+/* 品牌故事/关键词解析长文 */
+.xlg-article{background:#fff;border:1px solid var(--xlg-line);border-radius:20px;padding:34px 36px;box-shadow:var(--xlg-shadow)}
+.xlg-article h2{font-size:clamp(23px,2.8vw,30px);color:var(--xlg-ink)}
+.xlg-article h3{font-size:18px;color:var(--xlg-ink-2);margin-top:28px;border-left:4px solid var(--xlg-cyan);padding-left:12px}
+.xlg-article p{color:#38495e;font-size:15px;text-align:justify}
+.xlg-article .xlg-quote{
+  border-left:3px solid var(--xlg-blue);background:var(--xlg-soft);padding:14px 18px;
+  border-radius:0 12px 12px 0;font-size:14px;color:#2a4468;margin:20px 0;
+}
+
+/* 榜单 */
+.xlg-rank-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.xlg-rank{background:#fff;border:1px solid var(--xlg-line);border-radius:var(--xlg-radius);padding:20px}
+.xlg-rank h3{font-size:16px;color:var(--xlg-ink);display:flex;align-items:center;gap:8px}
+.xlg-rank h3 span{width:8px;height:8px;border-radius:50%;background:var(--xlg-cyan)}
+.xlg-rank ol{margin:12px 0 0;padding-left:0;list-style:none;font-size:13.5px}
+.xlg-rank ol li{display:flex;gap:10px;padding:8px 0;border-bottom:1px dashed var(--xlg-line);color:#33465e}
+.xlg-rank ol li:last-child{border-bottom:0}
+.xlg-rank ol li b{color:var(--xlg-blue);min-width:18px}
+.xlg-rank ol li em{font-style:normal;margin-left:auto;color:var(--xlg-muted);font-size:12px;white-space:nowrap}
+
+/* 评价（双列短评） */
+.xlg-review-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.xlg-review{background:#fff;border:1px solid var(--xlg-line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:8px}
+.xlg-review .xlg-avatar-row{font-size:12.5px}
+.xlg-review p{font-size:13.5px;color:#3a4c62;margin:0}
+.xlg-stars{color:#f0a02a;font-size:13px;letter-spacing:2px}
+
+/* 辅助区：动态 / 合作 / FAQ */
+.xlg-aux-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:26px;align-items:start}
+.xlg-news{background:#fff;border:1px solid var(--xlg-line);border-radius:var(--xlg-radius);padding:22px}
+.xlg-news ul{list-style:none;margin:0;padding:0}
+.xlg-news li{padding:12px 0;border-bottom:1px dashed var(--xlg-line);font-size:13.5px;color:#3a4c62;display:flex;gap:12px}
+.xlg-news li:last-child{border-bottom:0}
+.xlg-news li time{color:var(--xlg-muted);font-size:12.5px;flex:0 0 86px}
+.xlg-partners{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:14px}
+.xlg-partner{
+  border:1px solid var(--xlg-line);border-radius:12px;padding:14px;text-align:center;
+  font-size:13.5px;color:#33465e;background:#fff;
+}
+.xlg-partner b{display:block;color:var(--xlg-ink);font-size:14px}
+.xlg-faq{background:#fff;border:1px solid var(--xlg-line);border-radius:var(--xlg-radius);padding:22px}
+.xlg-faq details{border-bottom:1px solid var(--xlg-line);padding:10px 0}
+.xlg-faq details:last-child{border-bottom:0}
+.xlg-faq summary{cursor:pointer;font-size:14px;color:var(--xlg-ink);font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:10px}
+.xlg-faq summary::-webkit-details-marker{display:none}
+.xlg-faq summary::after{content:"+";color:var(--xlg-blue);font-weight:700}
+.xlg-faq details[open] summary::after{content:"–"}
+.xlg-faq details p{font-size:13px;color:var(--xlg-muted);margin:8px 0 0}
+
+/* 页脚 */
+.xlg-footer{background:var(--xlg-ink);color:#b9cbe2;padding:48px 0 24px;margin-top:0}
+.xlg-footer-grid{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,1fr));gap:30px}
+.xlg-footer h4{color:#fff;font-size:14.5px;margin-bottom:12px}
+.xlg-footer ul{list-style:none;margin:0;padding:0;font-size:13px}
+.xlg-footer ul li{margin-bottom:8px}
+.xlg-footer a:hover{color:var(--xlg-cyan)}
+.xlg-footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:12px;color:#fff;font-weight:800;font-size:18px}
+.xlg-footer p{font-size:13px;color:#96acc7}
+.xlg-footer-bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:32px;padding-top:18px;font-size:12.5px;color:#8ba3c1;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+/* 交互：Toast / 弹窗 / 回顶 */
+.xlg-toast{
+  position:fixed;left:50%;bottom:28px;transform:translate(-50%,20px);
+  background:var(--xlg-ink);color:#fff;padding:11px 20px;border-radius:10px;font-size:13.5px;
+  opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;z-index:200;box-shadow:0 12px 30px rgba(0,0,0,.25);
+}
+.xlg-toast.is-show{opacity:1;transform:translate(-50%,0)}
+.xlg-modal{
+  position:fixed;inset:0;background:rgba(6,19,35,.62);display:none;place-items:center;z-index:210;padding:20px;
+}
+.xlg-modal.is-open{display:grid}
+.xlg-modal-box{
+  background:#fff;border-radius:18px;max-width:520px;width:100%;padding:26px;position:relative;
+  box-shadow:0 30px 80px rgba(0,0,0,.3);
+}
+.xlg-modal-box h3{color:var(--xlg-ink);margin-bottom:8px}
+.xlg-modal-box p{font-size:13.5px;color:var(--xlg-muted)}
+.xlg-modal-close{position:absolute;top:12px;right:14px;border:0;background:transparent;font-size:22px;cursor:pointer;color:var(--xlg-muted)}
+.xlg-modal-box input,.xlg-modal-box textarea{
+  width:100%;border:1px solid var(--xlg-line);border-radius:10px;padding:10px 12px;font-size:13.5px;
+  font-family:inherit;margin-bottom:12px;color:var(--xlg-text);
+}
+.xlg-modal-box textarea{min-height:96px;resize:vertical}
+.xlg-backtop{
+  position:fixed;right:22px;bottom:24px;width:44px;height:44px;border-radius:50%;
+  background:var(--xlg-ink);color:#fff;border:0;font-size:18px;cursor:pointer;display:none;
+  place-items:center;z-index:150;box-shadow:0 10px 26px rgba(11,31,58,.3);
+}
+.xlg-backtop.is-show{display:grid}
+
+/* 响应式 */
+@media (max-width:1000px){
+  .xlg-hero-grid{grid-template-columns:1fr;gap:30px}
+  .xlg-focus-grid{grid-template-columns:1fr}
+  .xlg-video-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .xlg-author-grid{grid-template-columns:1fr}
+  .xlg-aux-grid{grid-template-columns:1fr}
+  .xlg-rank-grid{grid-template-columns:1fr}
+  .xlg-footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:760px){
+  .xlg-nav{
+    display:none;position:absolute;left:0;right:0;top:100%;background:var(--xlg-ink);
+    flex-direction:column;padding:10px 4%;gap:2px;border-top:1px solid rgba(255,255,255,.1);
+  }
+  .xlg-nav.is-open{display:flex}
+  .xlg-burger{display:grid;place-items:center}
+  .xlg-search input{width:96px}
+  .xlg-video-grid{grid-template-columns:1fr}
+  .xlg-topic-grid{grid-template-columns:1fr}
+  .xlg-review-grid{grid-template-columns:1fr}
+  .xlg-stats{grid-template-columns:1fr}
+  .xlg-article{padding:24px 20px}
+  .xlg-cta{display:none}
+  .xlg-footer-grid{grid-template-columns:1fr}
+  .xlg-author{flex-direction:column}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- S1 公告条（吸顶） -->
+<div class="xlg-topbar" id="xlgTopbar">
+  <div class="xlg-wrap">
+    <span class="xlg-topbar-tag">新增</span>
+    <div class="xlg-topbar-list">
+      <span><b>11/21</b> 官方发布《小蓝gtv官网入口 · 冬季原创片单》共 38 部高清作品</span>
+      <span><b>11/20</b> 创作者大赛「城市微光」报名通道开启</span>
+      <span><b>11/19</b> 内容生态 3.0 上传工具升级，支持 4K 直传</span>
+    </div>
+  </div>
+</div>
+
+<!-- S1 页头（吸顶） -->
+<header class="xlg-header">
+  <div class="xlg-wrap xlg-head-inner">
+    <a class="xlg-brand" href="#xlgHero" aria-label="小蓝gtv官网入口 首页">
+      <span class="xlg-brand-mark">蓝</span>
+      <span>小蓝gtv<small>OFFICIAL VIDEO</small></span>
+    </a>
+    <nav class="xlg-nav" id="xlgNav" aria-label="主导航">
+      <a href="#xlgFocus">焦点内容</a>
+      <a href="#xlgVideos">热门视频</a>
+      <a href="#xlgTopics">专题企划</a>
+      <a href="#xlgAuthors">创作者</a>
+      <a href="#xlgStory">品牌故事</a>
+      <a href="#xlgReviews">用户评价</a>
+      <a href="#xlgAux">帮助中心</a>
+    </nav>
+    <div class="xlg-head-tools">
+      <div class="xlg-search-wrap" id="xlgSearchWrap">
+        <form class="xlg-search" id="xlgSearchForm" role="search">
+          <input type="search" id="xlgSearchInput" placeholder="搜索视频 / 创作者 / 专题" aria-label="站内搜索">
+          <button type="submit">搜索</button>
+        </form>
+        <div class="xlg-search-msg" id="xlgSearchMsg" role="status"></div>
+      </div>
+      <button class="xlg-cta" type="button" data-xlg-open="submit">投稿入口</button>
+      <button class="xlg-burger" id="xlgBurger" type="button" aria-label="展开导航" aria-expanded="false" aria-controls="xlgNav">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- S2 品牌首屏 -->
+<section class="xlg-hero" id="xlgHero">
+  <div class="xlg-wrap xlg-hero-grid">
+    <div>
+      <span class="xlg-kicker">官方网站 · 企业级视频内容生态</span>
+      <h1>小蓝gtv官网入口</h1>
+      <p class="xlg-hero-lead">一个把原创影像、创作者社区与品牌故事放在同一张桌面上的官方视频门户。</p>
+      <p class="xlg-hero-desc">作为深耕视频垂直领域的品牌平台，小蓝gtv官网入口持续运营高品质内容生态，为企业与创作者搭建值得信赖的发布通道：高清正版片源、专业剪辑规范、社区共创与官方发布机制并存。我们希望每一次上传，都能在真实与温暖中被看见。</p>
+      <div class="xlg-hero-actions">
+        <a class="xlg-btn xlg-btn-primary" href="#xlgVideos">进入热门视频</a>
+        <a class="xlg-btn xlg-btn-ghost" href="#xlgTopics">查看专题企划</a>
+        <button class="xlg-btn xlg-btn-ghost" type="button" data-xlg-open="submit">提交作品</button>
+      </div>
+      <div class="xlg-stats">
+        <div class="xlg-stat"><b data-xlg-count="1286">0</b><span>在架高清作品</span></div>
+        <div class="xlg-stat"><b data-xlg-count="342">0</b><span>签约创作者</span></div>
+        <div class="xlg-stat"><b data-xlg-count="97">0</b><span>合作品牌伙伴</span></div>
+      </div>
+    </div>
+    <div class="xlg-hero-visual">
+      <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 560'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230b1f3a'/%3E%3Cstop offset='1' stop-color='%23123a63'/%3E%3C/linearGradient%3E%3ClinearGradient id='glow' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%235ad1e6'/%3E%3Cstop offset='1' stop-color='%232f6df6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='560' fill='url(%23bg)'/%3E%3Ccircle cx='600' cy='150' r='180' fill='%235ad1e6' opacity='.12'/%3E%3Ccircle cx='180' cy='430' r='140' fill='%232f6df6' opacity='.16'/%3E%3Crect x='70' y='120' width='430' height='250' rx='18' fill='%231a3559' stroke='%233a618f' stroke-width='2'/%3E%3Crect x='70' y='120' width='430' height='30' rx='18' fill='%2324477a'/%3E%3Ccircle cx='92' cy='135' r='5' fill='%235ad1e6'/%3E%3Ccircle cx='110' cy='135' r='5' fill='%235b7ba6'/%3E%3Ccircle cx='128' cy='135' r='5' fill='%235b7ba6'/%3E%3Crect x='96' y='176' width='160' height='96' rx='10' fill='%23234068'/%3E%3Cpath d='M150 268l-30-46 60 46z' fill='%235ad1e6' opacity='.85'/%3E%3Crect x='278' y='176' width='190' height='14' rx='7' fill='%23335c8f'/%3E%3Crect x='278' y='204' width='150' height='10' rx='5' fill='%232a4c78'/%3E%3Crect x='278' y='226' width='170' height='10' rx='5' fill='%232a4c78'/%3E%3Crect x='96' y='292' width='372' height='10' rx='5' fill='%232a4c78'/%3E%3Crect x='96' y='314' width='300' height='10' rx='5' fill='%232a4c78'/%3E%3Crect x='96' y='336' width='340' height='10' rx='5' fill='%232a4c78'/%3E%3Ccircle cx='632' cy='330' r='96' fill='none' stroke='url(%23glow)' stroke-width='4' opacity='.9'/%3E%3Cpath d='M608 296l54 34-54 34z' fill='%235ad1e6'/%3E%3Crect x='516' y='420' width='220' height='14' rx='7' fill='%233f6b9c'/%3E%3Crect x='516' y='446' width='150' height='10' rx='5' fill='%232a4c78'/%3E%3C/svg%3E" width="800" height="560" alt="小蓝gtv官网入口首页主视觉：深蓝界面中的视频播放器与播放按钮">
+      <div class="xlg-hero-badge"><i></i>官方发布 · 每日 10:00 更新</div>
+    </div>
+  </div>
+</section>
+
+<!-- S3 焦点内容 + 文字推荐 -->
+<section class="xlg-section" id="xlgFocus">
+  <div class="xlg-wrap xlg-anchor">
+    <div class="xlg-sec-head">
+      <div>
+        <div class="xlg-sec-tag">FOCUS / 焦点</div>
+        <h2>本周焦点：小蓝gtv官网入口精选原创内容</h2>
+        <p>焦点位由编辑团队与社区投票共同决定，兼顾品质与多元视角，让每一部值得被推荐的精品内容获得更长曝光时间。</p>
+      </div>
+      <a class="xlg-btn xlg-btn-ghost" style="color:var(--xlg-ink);border-color:var(--xlg-line);background:#fff" href="#xlgVideos">查看全部视频</a>
+    </div>
+    <div class="xlg-focus-grid">
+      <article class="xlg-card xlg-feature">
+        <div class="xlg-thumb">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='sky' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23142f52'/%3E%3Cstop offset='1' stop-color='%233d6fa8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23sky)'/%3E%3Ccircle cx='640' cy='110' r='52' fill='%235ad1e6' opacity='.55'/%3E%3Cpath d='M0 340 L150 250 L300 320 L450 220 L620 310 L800 240 L800 450 L0 450 Z' fill='%230d2340'/%3E%3Cpath d='M0 380 L200 320 L420 380 L640 310 L800 360 L800 450 L0 450 Z' fill='%23091930'/%3E%3Cg fill='%23e8f4ff' opacity='.8'%3E%3Crect x='120' y='360' width='6' height='34'/%3E%3Ccircle cx='123' cy='352' r='10'/%3E%3Crect x='330' y='336' width='6' height='40'/%3E%3Ccircle cx='333' cy='326' r='11'/%3E%3Crect x='540' y='352' width='6' height='36'/%3E%3Ccircle cx='543' cy='343' r='10'/%3E%3C/g%3E%3Crect x='250' y='120' width='180' height='110' rx='10' fill='%23234573' stroke='%235ad1e6' stroke-width='2'/%3E%3Cpath d='M312 168l44 20-44 20z' fill='%235ad1e6'/%3E%3C/svg%3E" width="800" height="450" alt="焦点视频《城市夜行记：72小时记录一座城的呼吸》主视觉：夜色城市剪影与播放窗口">
+          <div class="xlg-play"><span>▶</span></div>
+        </div>
+        <div class="xlg-feature-body">
+          <div class="xlg-meta"><span>深度记录</span><span>02:14:36</span><span>2026-11-18</span></div>
+          <h3>城市夜行记：72小时记录一座城的呼吸</h3>
+          <p>三位创作者分头走进凌晨三点的街道、清晨五点的菜市场与傍晚七点的天桥，用长镜头和同期声记录城市在光与暗之间的真实温度。这是小蓝gtv官网入口本年度的重点原创纪录企划之一。</p>
+          <div class="xlg-tags"><span class="xlg-tag">城市探索</span><span class="xlg-tag">真实</span><span class="xlg-tag">高清</span></div>
+          <div class="xlg-actions">
+            <button class="xlg-icon-btn" type="button" data-xlg-like aria-pressed="false"><span>♡</span> 喜欢 <b>2,314</b></button>
+            <button class="xlg-icon-btn" type="button" data-xlg-save aria-pressed="false"><span>☆</span> 收藏</button>
+            <button class="xlg-icon-btn" type="button" data-xlg-share>↗ 分享</button>
+            <button class="xlg-icon-btn" type="button" data-xlg-open="comment">💬 评论 186</button>
+          </div>
+        </div>
+      </article>
+      <div class="xlg-list">
+        <article class="xlg-list-item">
+          <h4><span class="xlg-num">01</span>镜头里的四季：一支团队如何拍完一座城</h4>
+          <p>从勘景到调色，完整复盘一部城市四季短片的 41 天制作流程，附分镜表与设备清单。</p>
+          <div class="xlg-avatar-row"><span class="xlg-avatar" style="background:#2f6df6">林</span> 林见川 · 播放 8.2 万 · 收藏 6,140</div>
+        </article>
+        <article class="xlg-list-item">
+          <h4><span class="xlg-num">02</span>小成本也能有大质感：自然光拍摄的 7 个细节</h4>
+          <p>不依赖昂贵灯光，用窗光、反光板与白平衡控制，做出干净通透的日常影像。</p>
+          <div class="xlg-avatar-row"><span class="xlg-avatar" style="background:#1fa98a">苏</span> 苏小满 · 播放 6.7 万 · 收藏 5,208</div>
+        </article>
+        <article class="xlg-list-item">
+          <h4><span class="xlg-num">03</span>访谈：把「陪伴」拍成一种可被看见的结构</h4>
+          <p>纪录片导演周栖谈小蓝gtv官网入口的创作者生态，以及长期拍摄如何建立信任。</p>
+          <div class="xlg-avatar-row"><span class="xlg-avatar" style="background:#b3662a">周</span> 周栖 · 播放 4.1 万 · 收藏 3,022</div>
+        </article>
+        <article class="xlg-list-item">
+          <h4><span class="xlg-num">04</span>冬季片单发布：38 部适合夜晚观看的原创作品</h4>
+          <p>官方编辑部按情绪与时长分类整理，从 6 分钟随笔到 90 分钟长片，一次看全。</p>
+          <div class="xlg-avatar-row"><span class="xlg-avatar" style="background:#6b5ce0">编</span> 官方编辑部 · 播放 3.6 万 · 收藏 4,760</div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- S3 热门视频（三列卡片） -->
+<section class="xlg-section xlg-section-alt" id="xlgVideos">
+  <div class="xlg-wrap xlg-anchor">
+    <div class="xlg-sec-head">
+      <div>
+        <div class="xlg-sec-tag">TRENDING / 热门</div>
+        <h2>热门视频：小蓝gtv官网入口社区持续更新的内容流</h2>
+        <p>基于播放完成度、互动质量与收藏率的综合排序，每 6 小时刷新一次，避免单一指标造成的内容偏斜。</p>
+      </div>
+    </div>
+    <div class="xlg-video-grid" id="xlgVideoGrid">
+      <article class="xlg-card xlg-video-card" data-xlg-keywords="手作 木工 匠心">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23f3e9d8'/%3E%3Crect x='0' y='250' width='640' height='110' fill='%23d9c3a2'/%3E%3Crect x='90' y='140' width='250' height='120' rx='8' fill='%23a97c4c'/%3E%3Crect x='110' y='120' width='210' height='26' rx='6' fill='%238a6238'/%3E%3Ccircle cx='480' cy='160' r='64' fill='%23c9a06a'/%3E%3Ccircle cx='480' cy='160' r='38' fill='%23f3e9d8'/%3E%3Crect x='452' y='226' width='56' height='70' rx='8' fill='%238a6238'/%3E%3Cpath d='M170 100l30-46 30 46z' fill='%23b58a55'/%3E%3C/svg%3E" width="640" height="360" alt="手作视频封面：木工工作台上的榫卯结构与手工工具">
+        <div class="xlg-video-body">
+          <div class="xlg-meta"><span>手作DIY</span><span>08:42</span></div>
+          <h3>榫卯三日：一张不用钉子的矮凳</h3>
+          <p>从选料到打磨，完整记录一张小木凳的三天制作过程，包含木材含水率与打磨目数的实测。</p>
+          <div class="xlg-tags"><span class="xlg-tag">匠心</span><span class="xlg-tag">教程干货</span></div>
+          <div class="xlg-avatar-row" style="margin-top:10px"><span class="xlg-avatar" style="background:#a97c4c">木</span> 木作阿岚 · 12.4 万播放</div>
+          <div class="xlg-actions">
+            <button class="xlg-icon-btn" type="button" data-xlg-like aria-pressed="false"><span>♡</span> 喜欢 <b>1,208</b></button>
+            <button class="xlg-icon-btn" type="button" data-xlg-save aria-pressed="false"><span>☆</span> 收藏</button>
+            <button class="xlg-icon-btn" type="button" data-xlg-open="author">作者</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="xlg-card xlg-video-card" data-xlg-keywords="科技 测评 数码">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%230e1626'/%3E%3Ccircle cx='500' cy='90' r='130' fill='%231e3a63' opacity='.85'/%3E%3Crect x='70' y='90' width='300' height='180' rx='14' fill='%23162540' stroke='%235ad1e6' stroke-width='2'/%3E%3Crect x='90' y='112' width='140' height='10' rx='5' fill='%235ad1e6'/%3E%3Crect x='90' y='136' width='250' height='8' rx='4' fill='%23304f7a'/%3E%3Crect x='90' y='156' width='210' height='8' rx='4' fill='%23304f7a'/%3E%3Crect x='90' y='176' width='236' height='8' rx='4' fill='%23304f7a'/%3E%3Crect x='90' y='208' width='90' height='28' rx='7' fill='%235ad1e6' opacity='.9'/%3E%3Crect x='420' y='200' width='140' height='90' rx='10' fill='%23234771' stroke='%234d80b8'/%3E%3Cpath d='M470 222v46l40-23z' fill='%235ad1e6'/%3E%3C/svg%3E" width="640" height="360" alt="科技测评视频封面：剪辑软件界面与渲染进度示意">
+        <div class="xlg-video-body">
+          <div class="xlg-meta"><span>深度测评</span><span>15:06</span></div>
+          <h3>五款剪辑软件横评：谁更适合长片叙事</h3>
+          <p>用同一份 40 分钟素材做对照测试，比较时间线响应、代理文件与色彩管理，给出选择建议。</p>
+          <div class="xlg-tags"><span class="xlg-tag">科技前沿</span><span class="xlg-tag">专业</span></div>
+          <div class="xlg-avatar-row" style="margin-top:10px"><span class="xlg-avatar" style="background:#2f6df6">柯</span> 柯一帧 · 9.8 万播放</div>
+          <div class="xlg-actions">
+            <button class="xlg-icon-btn" type="button" data-xlg-like aria-pressed="false"><span>♡</span> 喜欢 <b>986</b></button>
+            <button class="xlg-icon-btn" type="button" data-xlg-save aria-pressed="false"><span>☆</span> 收藏</button>
+            <button class="xlg-icon-btn" type="button" data-xlg-open="author">作者</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="xlg-card xlg-video-card" data-xlg-keywords="咖啡 生活方式 日常记录">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23f6efe6'/%3E%3Crect x='0' y='270' width='640' height='90' fill='%23e2d3bf'/%3E%3Cpath d='M210 250h180l-20 60H230z' fill='%23d8c2a4'/%3E%3Crect x='250' y='130' width='110' height='120' rx='10' fill='%233f2a1d'/%3E%3Cpath d='M360 160h34a30 30 0 010 60h-34' fill='none' stroke='%233f2a1d' stroke-width='12'/%3E%3Cpath d='M276 100c0-16 16-16 16-32M306 100c0-16 16-16 16-32M336 100c0-16 16-16 16-32' stroke='%23b39169' stroke-width='6' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='520' cy='130' r='52' fill='%23c9b49a'/%3E%3Crect x='470' y='182' width='100' height='90' rx='10' fill='%23b8a288'/%3E%3C/svg%3E" width="640" height="360" alt="咖啡视频封面：手冲咖啡壶与热气线条插画">
+        <div class="xlg-video-body">
+          <div class="xlg-meta"><span>生活方式</span><span>06:18</span></div>
+          <h3>早晨六点半：一杯手冲与一天的开始</h3>
+          <p>记录固定工作日的一段晨间流程，从磨豆到注水节奏，附带三种豆子的参数对照。</p>
+          <div class="xlg-tags"><span class="xlg-tag">日常记录</span><span class="xlg-tag">治愈影像</span></div>
+          <div class="xlg-avatar-row" style="margin-top:10px"><span class="xlg-avatar" style="background:#b3662a">陆</span> 陆早 · 7.5 万播放</div>
+          <div class="xlg-actions">
+            <button class="xlg-icon-btn" type="button" data-xlg-like aria-pressed="false"><span>♡</span> 喜欢 <b>842</b></button>
+            <button class="xlg-icon-btn" type="button" data-xlg-save aria-pressed="false"><span>☆</span> 收藏</button>
+            <button class="xlg-icon-btn" type="button" data-xlg-open="author">作者</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="xlg-card xlg-video-card" data-xlg-keywords="访谈 人物 品牌故事">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23161f33'/%3E%3Ccircle cx='230' cy='150' r='86' fill='%233f5782'/%3E%3Ccircle cx='230' cy='128' r='38' fill='%23dbe6f5'/%3E%3Crect x='162' y='176' width='136' height='86' rx='34' fill='%23dbe6f5'/%3E%3Crect x='330' y='120' width='220' height='120' rx='12' fill='%2322273d' stroke='%235ad1e6'/%3E%3Crect x='350' y='142' width='150' height='10' rx='5' fill='%235ad1e6'/%3E%3Crect x='350' y='164' width='180' height='8' rx='4' fill='%2344506b'/%3E%3Crect x='350' y='182' width='120' height='8' rx='4' fill='%2344506b'/%3E%3C/svg%3E" width="640" height="360" alt="人物访谈视频封面：创作者剪影与访谈字幕框">
+        <div class="xlg-video-body">
+          <div class="xlg-meta"><span>人物访谈</span><span>22:31</span></div>
+          <h3>创作者访谈：我为什么选择长期主义</h3>
+          <p>与三位签约创作者聊更新的节奏、内容的取舍，以及在社区中被真实反馈推动的成长。</p>
+          <div class="xlg-tags"><span class="xlg-tag">品牌故事</span><span class="xlg-tag">访谈</span></div>
+          <div class="xlg-avatar-row" style="margin-top:10px"><span class="xlg-avatar" style="background:#6b5ce0">周</span> 周栖 · 5.3 万播放</div>
+          <div class="xlg-actions">
+            <button class="xlg-icon-btn" type="button" data-xlg-like aria-pressed="false"><span>♡</span> 喜欢 <b>631</b></button>
+            <button class="xlg-icon-btn" type="button" data-xlg-save aria-pressed="false"><span>☆</span> 收藏</button>
+            <button class="xlg-icon-btn" type="button" data-xlg-open="author">作者</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="xlg-card xlg-video-card" data-xlg-keywords="户外 露营 自然">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23213f34'/%3E%3Ccircle cx='510' cy='80' r='42' fill='%23cfe4c4' opacity='.8'/%3E%3Cpath d='M0 260 L140 180 L280 250 L430 170 L640 250 L640 360 L0 360 Z' fill='%23142a22'/%3E%3Cpath d='M240 300l80-110 80 110z' fill='%23e0d3a8'/%3E%3Cpath d='M320 300v-70' stroke='%238a7a4c' stroke-width='4'/%3E%3Crect x='60' y='290' width='60' height='40' rx='6' fill='%234a6b4d'/%3E%3Ccircle cx='470' cy='300' r='26' fill='%23d9a94e' opacity='.9'/%3E%3C/svg%3E" width="640" height="360" alt="户外露营视频封面：夜色山林中的帐篷与月亮">
+        <div class="xlg-video-body">
+          <div class="xlg-meta"><span>户外活动</span><span>11:09</span></div>
+          <h3>山野两日：从搭营到清晨的第一缕光</h3>
+          <p>一次轻量露营的完整记录，包含装备清单、天气判断与夜间收音的小技巧。</p>
+          <div class="xlg-tags"><span class="xlg-tag">户外</span><span class="xlg-tag">攻略</span></div>
+          <div class="xlg-avatar-row" style="margin-top:10px"><span class="xlg-avatar" style="background:#1fa98a">向</span> 向野 · 6.1 万播放</div>
+          <div class="xlg-actions">
+            <button class="xlg-icon-btn" type="button" data-xlg-like aria-pressed="false"><span>♡</span> 喜欢 <b>712</b></button>
+            <button class="xlg-icon-btn" type="button" data-xlg-save aria-pressed="false"><span>☆</span> 收藏</button>
+            <button class="xlg-icon-btn" type="button" data-xlg-open="author">作者</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="xlg-card xlg-video-card" data-xlg-keywords="行业观察 内容生态 创作幕后">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23f0f4fa'/%3E%3Crect x='60' y='60' width='240' height='150' rx='10' fill='%23ffffff' stroke='%23c8d7e8'/%3E%3Crect x='80' y='84' width='110' height='10' rx='5' fill='%232f6df6'/%3E%3Crect x='80' y='108' width='190' height='8' rx='4' fill='%23d5e1ee'/%3E%3Crect x='80' y='126' width='160' height='8' rx='4' fill='%23d5e1ee'/%3E%3Crect x='80' y='150' width='120' height='36' rx='8' fill='%23e4eefb'/%3E%3Crect x='340' y='100' width='240' height='180' rx='12' fill='%230b1f3a'/%3E%3Ccircle cx='460' cy='190' r='40' fill='none' stroke='%235ad1e6' stroke-width='4'/%3E%3Cpath d='M448 176l26 14-26 14z' fill='%235ad1e6'/%3E%3Crect x='380' y='246' width='160' height='8' rx='4' fill='%233a5a83'/%3E%3C/svg%3E" width="640" height="360" alt="行业观察视频封面：数据面板与内容生态结构图">
+        <div class="xlg-video-body">
+          <div class="xlg-meta"><span>行业观察</span><span>18:24</span></div>
+          <h3>内容生态观察：2026 年视频平台的三条暗线</h3>
+          <p>从分发机制、创作者收益与用户留存三个维度，梳理值得长期关注的行业变化。</p>
+          <div class="xlg-tags"><span class="xlg-tag">行业领先</span><span class="xlg-tag">深度</span></div>
+          <div class="xlg-avatar-row" style="margin-top:10px"><span class="xlg-avatar" style="background:#2f6df6">编</span> 官方编辑部 · 4.7 万播放</div>
+          <div class="xlg-actions">
+            <button class="xlg-icon-btn" type="button" data-xlg-like aria-pressed="false"><span>♡</span> 喜欢 <b>556</b></button>
+            <button class="xlg-icon-btn" type="button" data-xlg-save aria-pressed="false"><span>☆</span> 收藏</button>
+            <button class="xlg-icon-btn" type="button" data-xlg-open="author">作者</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- S4 专题企划 -->
+<section class="xlg-section" id="xlgTopics">
+  <div class="xlg-wrap xlg-anchor">
+    <div class="xlg-sec-head">
+      <div>
+        <div class="xlg-sec-tag">PROGRAMS / 专题</div>
+        <h2>专题企划：围绕小蓝gtv官网入口的长期内容项目</h2>
+        <p>专题由官方发起、创作者共建，强调持续运营而非一次性活动，形成可被追踪的系列内容资产。</p>
+      </div>
+    </div>
+    <div class="xlg-topic-grid">
+      <article class="xlg-topic">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 840 360'%3E%3Crect width='840' height='360' fill='%230b1f3a'/%3E%3Ccircle cx='700' cy='80' r='120' fill='%235ad1e6' opacity='.16'/%3E%3Ccircle cx='120' cy='300' r='100' fill='%232f6df6' opacity='.2'/%3E%3Crect x='90' y='100' width='220' height='150' rx='12' fill='%231a3559' stroke='%233f6b9c'/%3E%3Crect x='330' y='120' width='180' height='12' rx='6' fill='%235ad1e6'/%3E%3Crect x='330' y='148' width='300' height='9' rx='4' fill='%232a4c78'/%3E%3Crect x='330' y='170' width='260' height='9' rx='4' fill='%232a4c78'/%3E%3Crect x='330' y='192' width='290' height='9' rx='4' fill='%232a4c78'/%3E%3Crect x='330' y='230' width='110' height='30' rx='8' fill='%235ad1e6'/%3E%3C/svg%3E" width="840" height="360" alt="专题「城市微光」主视觉：城市剪影与创作者镜头窗口">
+        <div class="xlg-topic-body">
+          <h3>城市微光 · 创作者大赛 <span class="xlg-status xlg-status-on">征集中</span></h3>
+          <p>面向所有创作者征集 3–10 分钟的城市人物短片，关注普通人的日常选择与微小坚持。优秀作品将进入小蓝gtv官网入口首页推荐位，并获得官方制片支持。</p>
+          <ol>
+            <li>《凌晨四点的面包房》—— 面包师与他的第一炉</li>
+            <li>《修表匠的第十二年》—— 一家老店的顾客画像</li>
+            <li>《夜班公交》—— 末班车上的四位乘客</li>
+          </ol>
+        </div>
+      </article>
+      <article class="xlg-topic">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 840 360'%3E%3Crect width='840' height='360' fill='%23f3ece2'/%3E%3Crect x='0' y='270' width='840' height='90' fill='%23e0d1bd'/%3E%3Ccircle cx='200' cy='140' r='70' fill='%23b98b53'/%3E%3Crect x='150' y='200' width='100' height='90' rx='10' fill='%23976f42'/%3E%3Crect x='330' y='90' width='330' height='180' rx='12' fill='%23ffffff' stroke='%23d6c3ab' stroke-width='2'/%3E%3Crect x='356' y='120' width='140' height='12' rx='6' fill='%23b98b53'/%3E%3Crect x='356' y='148' width='270' height='8' rx='4' fill='%23e3d6c4'/%3E%3Crect x='356' y='168' width='230' height='8' rx='4' fill='%23e3d6c4'/%3E%3Crect x='356' y='196' width='100' height='30' rx='8' fill='%23f3ece2'/%3E%3C/svg%3E" width="840" height="360" alt="专题「手作与时间」主视觉：木料、器物与工作台">
+        <div class="xlg-topic-body">
+          <h3>手作与时间 · 匠心纪录 <span class="xlg-status xlg-status-on">更新中</span></h3>
+          <p>记录十位手作人的完整工序与真实生活，探索「慢」在当下的意义。专题采用季度制更新，配合作者访谈与工序图解，形成可阅读也可观看的复合内容。</p>
+          <ol>
+            <li>《一张矮凳的三天》—— 榫卯结构与手感打磨</li>
+            <li>《泥与火之间》—— 柴烧陶器开窑实录</li>
+            <li>《纸上四十七刀》—— 手工装帧的完整流程</li>
+          </ol>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- S5 创作者矩阵（双列简介） -->
+<section class="xlg-section xlg-section-alt" id="xlgAuthors">
+  <div class="xlg-wrap xlg-anchor">
+    <div class="xlg-sec-head">
+      <div>
+        <div class="xlg-sec-tag">CREATORS / 创作者</div>
+        <h2>创作者矩阵：小蓝gtv官网入口的内容中坚</h2>
+        <p>他们来自不同城市与领域，共同构成平台多元、包容且持续生长的内容生态。每位创作者都经过官方认证与作品复核。</p>
+      </div>
+    </div>
+    <div class="xlg-author-grid">
+      <article class="xlg-author">
+        <span class="xlg-avatar" style="background:#2f6df6">林</span>
+        <div>
+          <h3>林见川</h3>
+          <div class="xlg-role">城市纪录 · 签约创作者</div>
+          <p>长期拍摄城市题材，擅长在长镜头中保留环境声与真实节奏。他相信一座城市的性格藏在清晨和深夜，因此大部分作品都在非高峰时段完成。近两年持续为小蓝gtv官网入口制作城市四季系列。</p>
+          <div class="xlg-author-data"><span>作品 <b>86</b></span><span>粉丝 <b>23.4 万</b></span></div>
+          <button class="xlg-icon-btn" type="button" data-xlg-open="author" style="margin-top:10px">查看档案</button>
+        </div>
+      </article>
+      <article class="xlg-author">
+        <span class="xlg-avatar" style="background:#1fa98a">苏</span>
+        <div>
+          <h3>苏小满</h3>
+          <div class="xlg-role">影像教程 · 技术向</div>
+          <p>专注自然光与低成本拍摄方案，教程以步骤清晰、参数可复现著称。她习惯在每条视频末尾附上完整设备与拍摄条件说明，让新手也能照着完成。是平台内收藏率最高的创作者之一。</p>
+          <div class="xlg-author-data"><span>作品 <b>112</b></span><span>粉丝 <b>31.7 万</b></span></div>
+          <button class="xlg-icon-btn" type="button" data-xlg-open="author" style="margin-top:10px">查看档案</button>
+        </div>
+      </article>
+      <article class="xlg-author">
+        <span class="xlg-avatar" style="background:#b3662a">周</span>
+        <div>
+          <h3>周栖</h3>
+          <div class="xlg-role">人物访谈 · 纪录片导演</div>
+          <p>纪录片出身，擅长用克制的方式呈现复杂的人物处境。他的访谈很少打断对方，更愿意留出沉默的部分。与小蓝gtv官网入口合作三年，完成了十余部创作者与普通人的深度访谈。</p>
+          <div class="xlg-author-data"><span>作品 <b>54</b></span><span>粉丝 <b>18.9 万</b></span></div>
+          <button class="xlg-icon-btn" type="button" data-xlg-open="author" style="margin-top:10px">查看档案</button>
+        </div>
+      </article>
+      <article class="xlg-author">
+        <span class="xlg-avatar" style="background:#6b5ce0">柯</span>
+        <div>
+          <h3>柯一帧</h3>
+          <div class="xlg-role">科技测评 · 后期流程</div>
+          <p>以严谨的对照测试见长，习惯把变量控制、样本数量与测试环境写进视频简介。他的测评不追求结论刺激，而是尽量让观众理解差异从何而来，因此被不少从业者当作工具参考。</p>
+          <div class="xlg-author-data"><span>作品 <b>97</b></span><span>粉丝 <b>27.2 万</b></span></div>
+          <button class="xlg-icon-btn" type="button" data-xlg-open="author" style="margin-top:10px">查看档案</button>
+        </div>
+      </article>
+      <article class="xlg-author">
+        <span class="xlg-avatar" style="background:#a97c4c">木</span>
+        <div>
+          <h3>木作阿岚</h3>
+          <div class="xlg-role">手作DIY · 木工</div>
+          <p>在城郊经营一间小木工房，作品以实用器物为主。他喜欢把工序完整保留在视频里，包括失败的返工环节。观众常在评论区讨论工艺细节，这也让他的内容逐渐形成一个小型的手作同好社区。</p>
+          <div class="xlg-author-data"><span>作品 <b>63</b></span><span>粉丝 <b>14.6 万</b></span></div>
+          <button class="xlg-icon-btn" type="button" data-xlg-open="author" style="margin-top:10px">查看档案</button>
+        </div>
+      </article>
+      <article class="xlg-author">
+        <span class="xlg-avatar" style="background:#1fa98a">向</span>
+        <div>
+          <h3>向野</h3>
+          <div class="xlg-role">户外活动 · 露营记录</div>
+          <p>专注轻量露营与山地徒步，内容强调安全边界与环保原则。他会公开每次出行的天气判断依据与装备取舍逻辑，也常在视频里提醒粉丝不要盲目模仿难度较高的线路。</p>
+          <div class="xlg-author-data"><span>作品 <b>48</b></span><span>粉丝 <b>11.3 万</b></span></div>
+          <button class="xlg-icon-btn" type="button" data-xlg-open="author" style="margin-top:10px">查看档案</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- M15 / 关键词解析长文 -->
+<section class="xlg-section" id="xlgStory">
+  <div class="xlg-wrap xlg-anchor">
+    <article class="xlg-article">
+      <div class="xlg-sec-tag">BRAND / 深度解析</div>
+      <h2>从入口到生态：小蓝gtv官网入口如何组织一个视频品牌</h2>
+      <p>在信息密集的今天，「入口」两个字的含义正在发生变化。它不再只是一个地址或一个跳转按钮，而是一整套内容秩序：用户从哪里进入、看到什么、如何判断内容是否可信、又如何在其中留下自己的痕迹。小蓝gtv官网入口作为品牌官方网站的核心页面，承担的就是这样的组织工作——把分散的创作、企业信息、社区互动与内容规范整合为一个可持续运营的整体。</p>
+
+      <h3>一、为什么一个视频品牌需要一个稳定的官网入口</h3>
+      <p>短视频的传播路径往往依赖推荐流，用户在一次滑动中遇见内容，又在下一次滑动中遗忘。对于希望长期建立口碑的品牌而言，仅依靠算法分发并不足够。小蓝gtv官网入口的设计出发点，是提供一个可以反复回到、结构清晰的稳定空间：用户能够按专题、按创作者、按题材检索，而不是被动等待推送。这种结构化的浏览方式，让精品内容拥有更长的曝光周期，也让企业动态、合作信息与官方发布具备统一的落点。</p>
+      <p>从技术实现的角度看，官网入口也是内容治理的第一道关口。平台在这里集中呈现正版授权说明、上传规范、审核流程与创作者认证标准。用户在进入具体视频之前，就已经能判断内容来源与责任主体，这种透明度是建立信任的基础。对于企业客户而言，官网还承担着品牌说明与商务沟通的职能，使得内容平台与品牌门户两种角色能够在一个页面内自然共存。</p>
+      <p>更实际的一点是，官网入口为创作者提供了可被引用的身份凭证。当一位创作者向合作方介绍自己时，能够指向一个包含作品列表、数据表现与平台认证的官方页面，其说服力远高于零散的截图。这种「可验证」的属性，是内容生态走向专业化的重要标志，也让平台的行业影响力通过具体机制沉淀下来。</p>
+
+      <h3>二、内容生态的三个支点：原创、社区与规范</h3>
+      <p>小蓝gtv官网入口的内容生态由三个支点共同支撑。第一个支点是原创。平台将原创作品与转载内容在展示层面明确区分，原创条目会标注作者认证与首发时间，并在专题策划中优先获得编辑推荐。对原创的保护不仅是版权声明，更体现在流量分配与收益机制上：官方每年设立创作激励计划，对持续产出高质量内容的创作者给予稳定支持，避免优质作者因短期数据波动而中断更新。</p>
+      <p>第二个支点是社区。视频内容的价值并不止于播放量，评论区、收藏夹与同好讨论往往才是用户真正停留的地方。平台为此设计了多维度的互动入口：点赞表达态度，收藏沉淀清单，评论展开讨论，分享把内容带到外部场景。这些动作看起来轻量，但当它们被长期记录后，就形成了创作者与观众之间的稳定关系。平台还定期组织线上投票与话题共创，让社区成员参与专题选题，从而把「用户至上」从口号变成可操作的产品机制。</p>
+      <p>第三个支点是规范。内容平台的长期运营离不开清晰的边界：上传需要符合画质与音质标准，引用素材需要标注来源，商业合作需要明确披露。小蓝gtv官网入口将这些规范写入帮助中心，并在投稿入口提供模板化提示，减少创作者在流程上的困惑。规范并不等于限制创意，恰恰相反，明确的规则能让创作者把精力集中在表达本身，也让观众对平台内容保持稳定的品质预期。</p>
+
+      <h3>三、从高清到可信：品质如何被具体衡量</h3>
+      <p>「高清」不只是分辨率数字。对于一支纪录片而言，清晰的画质需要配合准确的色彩管理、稳定的帧率与合理的码率控制；对于一档访谈节目，声音的清晰度往往比画面更重要。小蓝gtv官网入口在上传环节提供针对不同内容类型的参数建议，并在审核阶段对音画不同步、过度压缩与色彩断层等问题给出反馈。这种细致的把关，是平台被称为「专业」的具体来源，而不是一句宣传语。</p>
+      <p>可信度则来自另一套机制。平台对创作者身份、作品首发信息与商业合作内容进行分层标注，用户可以在视频页直接看到该条内容的属性。对于企业发布的官方内容，页面会明确展示品牌信息与责任主体，避免用户混淆。评论区同样设有反馈入口，用户可以针对内容准确性、版权问题或不当信息提交说明，平台会在承诺时限内处理并公开处理原则。这套机制并不追求绝对完美，而是强调可追溯与可改进，这也是持续运营的应有之意。</p>
+      <p>在内容品质的评估上，平台并不单纯依赖播放量。完播率、收藏率、评论质量与二次传播被纳入综合评分，避免标题党式的短期行为获得不合理回报。对创作者来说，这意味着更稳定的长期激励；对用户来说，这意味着打开页面的那一刻，遇到值得看完的内容的概率更高。值得信赖的口碑，正是在这样一次次具体的体验中积累起来的。</p>
+
+      <h3>四、面向未来：一个持续生长的内容社区</h3>
+      <p>视频行业的变化速度很快，工具的迭代、观看习惯的迁移、商业模式的调整都会影响平台的形态。小蓝gtv官网入口选择以「稳」应对变化：保持清晰的信息架构，保持对原创与规范的坚持，保持对社区反馈的响应速度。平台每年会进行一次较大规模的体验更新，但核心的导航逻辑与内容分类标准尽量保持延续，让长期用户不需要反复适应。</p>
+      <p>面向创作者，平台将继续扩大扶持范围，尤其是中小体量的持续更新者。面向企业客户，平台将提供更完整的内容合作方案，把品牌故事与真实创作结合，避免生硬的广告表达。面向普通用户，平台会继续优化检索与推荐之间的平衡，让「被推荐」与「主动寻找」两种行为都能获得良好体验。一个内容社区的生命力，最终取决于它能否让不同角色都在其中找到自己的位置，并愿意长期留下。小蓝gtv官网入口希望成为这样的地方：真实、温暖、有力量，也足够包容多元的表达。</p>
+    </article>
+  </div>
+</section>
+
+<!-- S6 数据榜单 -->
+<section class="xlg-section xlg-section-alt" id="xlgRank">
+  <div class="xlg-wrap xlg-anchor">
+    <div class="xlg-sec-head">
+      <div>
+        <div class="xlg-sec-tag">RANKING / 榜单</div>
+        <h2>数据榜单：小蓝gtv官网入口的三张实时榜</h2>
+        <p>榜单按周更新，统计口径与计算方式公开在帮助中心，接受创作者与用户监督。</p>
+      </div>
+    </div>
+    <div class="xlg-rank-grid">
+      <div class="xlg-rank">
+        <h3><span></span>热度榜</h3>
+        <ol>
+          <li><b>1</b> 城市夜行记：72小时记录一座城的呼吸 <em>98.6</em></li>
+          <li><b>2</b> 榫卯三日：一张不用钉子的矮凳 <em>95.2</em></li>
+          <li><b>3</b> 五款剪辑软件横评 <em>93.7</em></li>
+          <li><b>4</b> 早晨六点半：一杯手冲 <em>91.4</em></li>
+          <li><b>5</b> 山野两日：从搭营到清晨 <em>89.8</em></li>
+        </ol>
+      </div>
+      <div class="xlg-rank">
+        <h3><span></span>新人榜</h3>
+        <ol>
+          <li><b>1</b> 阿榆的厨房日记 <em>+128%</em></li>
+          <li><b>2</b> 老巷口的修表匠 <em>+96%</em></li>
+          <li><b>3</b> 一间小书店 <em>+88%</em></li>
+          <li><b>4</b> 通勤路上的取景练习 <em>+74%</em></li>
+          <li><b>5</b> 阳台上的四季 <em>+69%</em></li>
+        </ol>
+      </div>
+      <div class="xlg-rank">
+        <h3><span></span>口碑榜</h3>
+        <ol>
+          <li><b>1</b> 创作者访谈：我为什么选择长期主义 <em>4.9</em></li>
+          <li><b>2</b> 手作与时间 · 匠心纪录 <em>4.8</em></li>
+          <li><b>3</b> 内容生态观察 2026 <em>4.8</em></li>
+          <li><b>4</b> 纸上四十七刀 <em>4.7</em></li>
+          <li><b>5</b> 夜班公交 <em>4.7</em></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- S6 用户评价（双列短评） -->
+<section class="xlg-section" id="xlgReviews">
+  <div class="xlg-wrap xlg-anchor">
+    <div class="xlg-sec-head">
+      <div>
+        <div class="xlg-sec-tag">REVIEWS / 评价</div>
+        <h2>用户评价：来自小蓝gtv官网入口社区的真实反馈</h2>
+        <p>以下评价来自注册用户的公开留言，涵盖内容、体验与创作者服务等不同维度。</p>
+      </div>
+    </div>
+    <div class="xlg-review-grid">
+      <article class="xlg-review">
+        <div class="xlg-avatar-row"><span class="xlg-avatar" style="background:#2f6df6">陈</span> 陈默 · 注册 2 年</div>
+        <div class="xlg-stars">★★★★★</div>
+        <p>最喜欢这里的专题页，不是把视频堆在一起，而是真的有人在做编排。城市微光那几部短片我反复看了三遍，评论区讨论也很克制，没有无意义的争吵。</p>
+      </article>
+      <article class="xlg-review">
+        <div class="xlg-avatar-row"><span class="xlg-avatar" style="background:#1fa98a">许</span> 许一 · 独立创作者</div>
+        <div class="xlg-stars">★★★★★</div>
+        <p>上传流程比我预想的细，审核反馈会具体到哪一段音频有问题，而不是一句「不符合规范」。对新手来说这种反馈很有用，能真正把作品改好。</p>
+      </article>
+      <article class="xlg-review">
+        <div class="xlg-avatar-row"><span class="xlg-avatar" style="background:#b3662a">罗</span> 罗小北 · 学生</div>
+        <div class="xlg-stars">★★★★☆</div>
+        <p>搜索偶尔会漏掉一些老作品，希望之后能按年份筛选。内容本身质量稳定，尤其喜欢自然光拍摄那期教程，跟着做了一次，效果确实干净很多。</p>
+      </article>
+      <article class="xlg-review">
+        <div class="xlg-avatar-row"><span class="xlg-avatar" style="background:#6b5ce0">唐</span> 唐果 · 品牌方</div>
+        <div class="xlg-stars">★★★★★</div>
+        <p>合作过一次专题定制，沟通流程清晰，内容团队会先理解产品再讨论表达方式，最后成片没有硬广感。品牌故事能被这样讲出来，我们是满意的。</p>
+      </article>
+      <article class="xlg-review">
+        <div class="xlg-avatar-row"><span class="xlg-avatar" style="background:#a97c4c">钟</span> 钟师傅 · 手作爱好者</div>
+        <div class="xlg-stars">★★★★☆</div>
+        <p>木作类内容不算多，但选得挺准。希望多来点失败案例的复盘，那比成功作品更有参考价值。评论区里也有几位老师傅愿意解答，氛围不错。</p>
+      </article>
+      <article class="xlg-review">
+        <div class="xlg-avatar-row"><span class="xlg-avatar" style="background:#2f6df6">简</span> 简宁 · 注册 1 年</div>
+        <div class="xlg-stars">★★★★★</div>
+        <p>页面很干净，没有乱七八糟的弹窗。收藏夹功能用得最多，通勤时先存下来，晚上再投屏看。画质一直很稳，加载也快，这点比很多平台做得好。</p>
+      </article>
+      <article class="xlg-review">
+        <div class="xlg-avatar-row"><span class="xlg-avatar" style="background:#1fa98a">白</span> 白露 · 摄影爱好者</div>
+        <div class="xlg-stars">★★★★★</div>
+        <p>访谈类内容是我留下的主要原因。看创作者讲自己的取舍，比看技巧更有启发。希望以后能多一点幕后花絮，想知道一期片子真正的时间成本。</p>
+      </article>
+      <article class="xlg-review">
+        <div class="xlg-avatar-row"><span class="xlg-avatar" style="background:#b3662a">季</span> 季川 · 户外爱好者</div>
+        <div class="xlg-stars">★★★★☆</div>
+        <p>户外内容的安全提示做得比较到位，这点值得肯定。如果能补充不同季节的装备对照表就更好了，我每次出行前都会来翻一遍攻略。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- S7 辅助区：企业动态 + 合作品牌 + FAQ -->
+<section class="xlg-section xlg-section-alt" id="xlgAux">
+  <div class="xlg-wrap xlg-anchor">
+    <div class="xlg-sec-head">
+      <div>
+        <div class="xlg-sec-tag">SERVICE / 服务与帮助</div>
+        <h2>企业动态、合作与常见问题</h2>
+        <p>小蓝gtv官网入口持续发布官方信息，也欢迎更多品牌与机构加入内容共建。</p>
+      </div>
+      <button class="xlg-btn xlg-btn-primary" type="button" data-xlg-open="submit">我要投稿</button>
+    </div>
+    <div class="xlg-aux-grid">
+      <div>
+        <div class="xlg-news">
+          <h3 style="font-size:17px;color:var(--xlg-ink)">企业动态</h3>
+          <ul>
+            <li><time>2026-11-21</time><span>冬季原创片单正式发布，共收录 38 部高清作品，覆盖纪录、访谈与生活方式三类题材。</span></li>
+            <li><time>2026-11-19</time><span>上传工具升级至 3.0，支持 4K 直传与断点续传，平均上传耗时下降约 34%。</span></li>
+            <li><time>2026-11-16</time><span>「城市微光」创作者大赛开放报名，总扶持名额 20 个，报名截止 12 月 20 日。</span></li>
+            <li><time>2026-11-10</time><span>平台与三家影像机构达成内容合作，共建纪录短片联合出品计划。</span></li>
+            <li><time>2026-11-03</time><span>帮助中心新增「版权与素材引用」专题说明，投稿模板同步更新。</span></li>
+          </ul>
+        </div>
+        <div class="xlg-news" style="margin-top:22px">
+          <h3 style="font-size:17px;color:var(--xlg-ink)">合作品牌与伙伴</h3>
+          <div class="xlg-partners">
+            <div class="xlg-partner"><b>蓝湾影像</b>联合出品</div>
+            <div class="xlg-partner"><b>木与火器物</b>专题支持</div>
+            <div class="xlg-partner"><b>山野装备社</b>内容共建</div>
+            <div class="xlg-partner"><b>城南书店</b>线下放映</div>
+            <div class="xlg-partner"><b>帧率实验室</b>技术协作</div>
+            <div class="xlg-partner"><b>晚风音乐</b>声音授权</div>
+          </div>
+        </div>
+      </div>
+      <div class="xlg-faq">
+        <h3 style="font-size:17px;color:var(--xlg-ink)">常见问题</h3>
+        <details open>
+          <summary>如何在小蓝gtv官网入口投稿？</summary>
+          <p>点击页面顶部或帮助区的「投稿入口」，填写作品信息并上传文件。原创作品需提供首发声明，商业合作内容需注明合作方。</p>
+        </details>
+        <details>
+          <summary>上传的视频有什么格式要求？</summary>
+          <p>建议使用 H.264 编码、1080P 及以上分辨率、码率不低于 8Mbps 的 MP4 文件，音频采样率 48kHz。4K 文件可通过直传通道提交。</p>
+        </details>
+        <details>
+          <summary>审核一般需要多久？</summary>
+          <p>常规作品在 24 小时内完成初审，涉及版权材料或特殊题材的作品可能需要 2–3 个工作日，结果会通过站内消息通知。</p>
+        </details>
+        <details>
+          <summary>原创认证怎么申请？</summary>
+          <p>连续发布 3 部以上原创作品且无版权争议的创作者，可在个人主页提交认证申请，平台会核对作品信息与发布记录。</p>
+        </details>
+        <details>
+          <summary>可以使用他人音乐或素材吗？</summary>
+          <p>需获得明确授权并在简介中标注来源。平台提供部分可商用音乐清单，建议优先选用，避免因授权不清导致下架。</p>
+        </details>
+        <details>
+          <summary>榜单的统计口径是什么？</summary>
+          <p>热度榜综合完播率、互动质量与收藏率；新人榜按注册 90 天内账号的成长幅度计算；口碑榜基于用户评分与评论质量。</p>
+        </details>
+        <details>
+          <summary>如何反馈内容问题或举报？</summary>
+          <p>可在视频页点击分享旁的反馈入口提交说明，或在帮助中心留言。平台承诺在 48 小时内响应并告知处理进度。</p>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- S8 页脚 -->
+<footer class="xlg-footer">
+  <div class="xlg-wrap">
+    <div class="xlg-footer-grid">
+      <div>
+        <div class="xlg-footer-brand"><span class="xlg-brand-mark">蓝</span> 小蓝gtv官网入口</div>
+        <p>小蓝gtv官方网站 · 专注原创视频与创作者社区的内容平台。我们坚持高清、正版、专业的品质标准，以持续运营的方式构建值得信赖的内容生态。</p>
+        <p style="margin-top:12px">© 2026 小蓝gtv 版权所有 · 持续运营中</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#xlgFocus">焦点内容</a></li>
+          <li><a href="#xlgVideos">热门视频</a></li>
+          <li><a href="#xlgTopics">专题企划</a></li>
+          <li><a href="#xlgRank">数据榜单</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>创作者服务</h4>
+        <ul>
+          <li><a href="#xlgAuthors">创作者矩阵</a></li>
+          <li><a href="#" data-xlg-open="submit">投稿入口</a></li>
+          <li><a href="#xlgAux">帮助中心</a></li>
+          <li><a href="#xlgStory">品牌故事</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>官方信息</h4>
+        <ul>
+          <li>企业动态与官方发布</li>
+          <li>合作与商务沟通</li>
+          <li>版权与内容规范</li>
+          <li>用户反馈与举报</li>
+        </ul>
+      </div>
+    </div>
+    <div class="xlg-footer-bottom">
+      <span>小蓝gtv官网入口 · 官方视频品牌门户</span>
+      <span>备案号：示例备 2026000000 号 · 本页为品牌展示页</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Toast / Modal / 回顶 -->
+<div class="xlg-toast" id="xlgToast" role="status" aria-live="polite"></div>
+
+<div class="xlg-modal" id="xlgModal" role="dialog" aria-modal="true" aria-labelledby="xlgModalTitle">
+  <div class="xlg-modal-box">
+    <button class="xlg-modal-close" type="button" id="xlgModalClose" aria-label="关闭弹窗">×</button>
+    <h3 id="xlgModalTitle">投稿入口</h3>
+    <p id="xlgModalDesc">填写基本信息，内容团队会在两个工作日内与你联系。</p>
+    <div id="xlgModalFields">
+      <input type="text" id="xlgFieldName" placeholder="你的昵称或机构名称" aria-label="昵称或机构名称">
+      <input type="text" id="xlgFieldWork" placeholder="作品标题 / 主题" aria-label="作品标题">
+      <textarea id="xlgFieldNote" placeholder="简要说明作品内容、时长与是否原创" aria-label="作品说明"></textarea>
+    </div>
+    <button class="xlg-btn xlg-btn-primary" type="button" id="xlgModalSubmit">提交信息</button>
+  </div>
+</div>
+
+<button class="xlg-backtop" id="xlgBackTop" type="button" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- 1. 移动端导航折叠 ---------- */
+  var burger = document.getElementById("xlgBurger");
+  var nav = document.getElementById("xlgNav");
+  if (burger && nav) {
+    burger.addEventListener("click", function(){
+      var open = nav.classList.toggle("is-open");
+      burger.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    nav.addEventListener("click", function(e){
+      if (e.target.tagName === "A" && nav.classList.contains("is-open")) {
+        nav.classList.remove("is-open");
+        burger.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
+
+  /* ---------- Toast ---------- */
+  var toastEl = document.getElementById("xlgToast");
+  var toastTimer = null;
+  function toast(msg){
+    if (!toastEl) return;
+    toastEl.textContent = msg;
+    toastEl.classList.add("is-show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){
+      toastEl.classList.remove("is-show");
+    }, 2200);
+  }
+
+  /* ---------- 2. 搜索反馈 ---------- */
+  var searchForm = document.getElementById("xlgSearchForm");
+  var searchInput = document.getElementById("xlgSearchInput");
+  var searchWrap = document.getElementById("xlgSearchWrap");
+  var searchMsg = document.getElementById("xlgSearchMsg");
+
+  function runSearch(keyword){
+    var kw = (keyword || "").trim();
+    if (!kw) {
+      searchMsg.textContent = "请输入视频标题、创作者昵称或专题关键词。";
+      searchWrap.classList.add("is-active");
+      return;
+    }
+    var cards = document.querySelectorAll("[data-xlg-keywords]");
+    var hits = 0;
+    cards.forEach(function(card){
+      var text = (card.textContent || "") + " " + (card.getAttribute("data-xlg-keywords") || "");
+      if (text.indexOf(kw) > -1) {
+        card.style.display = "";
+        hits++;
+      } else {
+        card.style.display = "none";
+      }
+    });
+    if (hits > 0) {
+      searchMsg.textContent = "在热门视频中找到 " + hits + " 条与「" + kw + "」相关的内容，已为你筛选。";
+    } else {
+      cards.forEach(function(card){ card.style.display = ""; });
+      searchMsg.textContent = "暂未找到与「" + kw + "」完全匹配的视频，可尝试「城市」「手作」「访谈」「户外」等关键词。";
+    }
+    searchWrap.classList.add("is-active");
+  }
+
+  if (searchForm) {
+    searchForm.addEventListener("submit", function(e){
+      e.preventDefault();
+      runSearch(searchInput.value);
+    });
+  }
+  document.addEventListener("click", function(e){
+    if (searchWrap && !searchWrap.contains(e.target)) {
+      searchWrap.classList.remove("is-active");
+    }
+  });
+
+  /* ---------- 3. 点赞 / 收藏 ---------- */
+  document.querySelectorAll("[data-xlg-like]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var liked = btn.classList.toggle("is-liked");
+      btn.setAttribute("aria-pressed", liked ? "true" : "false");
+      var b = btn.querySelector("b");
+      if (b) {
+        var num = parseInt(b.textContent.replace(/,/g, ""), 10) || 0;
+        num = liked ? num + 1 : Math.max(0, num - 1);
+        b.textContent = num.toLocaleString("en-US");
+      }
+      btn.querySelector("span").textContent = liked ? "♥" : "♡";
+      toast(liked ? "已加入你的喜欢列表" : "已取消喜欢");
+    });
+  });
+
+  document.querySelectorAll("[data-xlg-save]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var saved = btn.classList.toggle("is-saved");
+      btn.setAttribute("aria-pressed", saved ? "true" : "false");
+      btn.querySelector("span").textContent = saved ? "★" : "☆";
+      toast(saved ? "已收藏，可在个人页查看" : "已取消收藏");
+    });
+  });
+
+  /* ---------- 4. 分享（复制链接 + 提示） ---------- */
+  document.querySelectorAll("[data-xlg-share]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var url = window.location.href;
+      var title = document.title;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(function(){
+          toast("链接已复制，可分享到微信 / 微博 / QQ");
+        }).catch(function(){
+          toast("分享链接：" + url);
+        });
+      } else {
+        toast("分享链接：" + url);
+      }
+      if (navigator.share) {
+        navigator.share({ title: title, url: url }).catch(function(){});
+      }
+    });
+  });
+
+  /* ---------- 5. 弹窗（评论 / 作者 / 投稿） ---------- */
+  var modal = document.getElementById("xlgModal");
+  var modalTitle = document.getElementById("xlgModalTitle");
+  var modalDesc = document.getElementById("xlgModalDesc");
+  var modalFields = document.getElementById("xlgModalFields");
+  var modalSubmit = document.getElementById("xlgModalSubmit");
+  var modalClose = document.getElementById("xlgModalClose");
+  var modalMode = "submit";
+
+  var modalConfig = {
+    submit: {
+      title: "投稿入口",
+      desc: "填写基本信息，内容团队会在两个工作日内与你联系。",
+      fields: true,
+      btn: "提交信息"
+    },
+    comment: {
+      title: "评论区",
+      desc: "本页展示的是精选讨论。想参与互动，请在投稿入口留下你的观点与联系方式，我们会整理进下一期社区讨论。",
+      fields: false,
+      btn: "我知道了"
+    },
+    author: {
+      title: "创作者档案",
+      desc: "创作者档案包含认证信息、作品列表与擅长领域。完整档案与商务合作方式可通过投稿入口向官方团队索取。",
+      fields: false,
+      btn: "我知道了"
+    }
+  };
+
+  function openModal(mode){
+    modalMode = mode || "submit";
+    var cfg = modalConfig[modalMode] || modalConfig.submit;
+    modalTitle.textContent = cfg.title;
+    modalDesc.textContent = cfg.desc;
+    modalFields.style.display = cfg.fields ? "block" : "none";
+    modalSubmit.textContent = cfg.btn;
+    modal.classList.add("is-open");
+    if (cfg.fields) {
+      var first = document.getElementById("xlgFieldName");
+      if (first) setTimeout(function(){ first.focus(); }, 60);
+    }
+  }
+  function closeModal(){
+    modal.classList.remove("is-open");
+  }
+
+  document.addEventListener("click", function(e){
+    var opener = e.target.closest("[data-xlg-open]");
+    if (opener) {
+      e.preventDefault();
+      openModal(opener.getAttribute("data-xlg-open"));
+    }
+  });
+  if (modalClose) modalClose.addEventListener("click", closeModal);
+  if (modal) {
+    modal.addEventListener("click", function(e){
+      if (e.target === modal) closeModal();
+    });
+  }
+  document.addEventListener("keydown", function(e){
+    if (e.key === "Escape") closeModal();
+  });
+
+  if (modalSubmit) {
+    modalSubmit.addEventListener("click", function(){
+      if (modalMode !== "submit") {
+        closeModal();
+        return;
+      }
+      var name = document.getElementById("xlgFieldName").value.trim();
+      var work = document.getElementById("xlgFieldWork").value.trim();
+      if (!name || !work) {
+        toast("请先填写昵称和作品标题");
+        return;
+      }
+      closeModal();
+      toast("已收到投稿信息，感谢你的参与");
+      document.getElementById("xlgFieldName").value = "";
+      document.getElementById("xlgFieldWork").value = "";
+      document.getElementById("xlgFieldNote").value = "";
+    });
+  }
+
+  /* ---------- 6. 数字滚动 ---------- */
+  var counters = document.querySelectorAll("[data-xlg-count]");
+  var counted = false;
+  function runCountUp(){
+    if (counted) return;
+    var hero = document.getElementById("xlgHero");
+    if (!hero) return;
+    var rect = hero.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      counted = true;
+      counters.forEach(function(el){
+        var target = parseInt(el.getAttribute("data-xlg-count"), 10) || 0;
+        var start = 0;
+        var dur = 1100;
+        var t0 = null;
+        function step(ts){
+          if (!t0) t0 = ts;
+          var p = Math.min((ts - t0) / dur, 1);
+          var eased = 1 - Math.pow(1 - p, 3);
+          el.textContent = Math.round(start + (target - start) * eased).toLocaleString("en-US");
+          if (p < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+      });
+    }
+  }
+  window.addEventListener("scroll", runCountUp, { passive: true });
+  runCountUp();
+
+  /* ---------- 7. 回到顶部 ---------- */
+  var backTop = document.getElementById("xlgBackTop");
+  window.addEventListener("scroll", function(){
+    if (window.scrollY > 480) {
+      backTop.classList.add("is-show");
+    } else {
+      backTop.classList.remove("is-show");
+    }
+  }, { passive: true });
+  if (backTop) {
+    backTop.addEventListener("click", function(){
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+})();
+</script>
+</body>
+        </html>
